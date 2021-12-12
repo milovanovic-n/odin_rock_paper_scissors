@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+#mainContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #222831;
+    width: 100%;
+    height: 100%;
+}
+/* HEADER SECTION */
+header {
+    background-color: #393E46;
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 2px solid #00ADB5;
+}
+
+header h1 {
+    color: #00ADB5;
+    font-size: 3rem;
+}
+
+/* MAIN SECTION */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(220, 220, 220);
+}
+
+.container h3 {
+    font-size: 2.5rem;
+    padding: 28px 0;
+}
+
+.score {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    max-width: 600px;
+}
+
+.score p, .score span {
+    font-size: 1.5rem;
+}
+
+.options {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    max-width: 750px;
+}
+
+.option {
+    transition: all .2s;
+    border: 2px solid #00ADB5;
+    border-radius: 6px;
+    padding: 35px;
+    background-color: transparent;
+    color: white;
+}
+
+.option:hover {
+    cursor: pointer;
+    box-shadow: 0 0 11px #00ADB5;
+    background-color: #393E46;
+    transform: scale(1.1);
+}
+
+.option i {
+    font-size: 4rem;
+}
+
+/* FOOTER */
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 25px 0;
+    border-top: 1px solid #00777e;
+    background-color: #23262c;
+    color: #bebebe;
+}
+
+/* Styles for Reset Button */
+.optionHidden {
+    display: none;
+}
+
+/* Styles for disabled buttons */
+.optionDisabled {
+    cursor: not-allowed;
+    border: 2px solid #ff8baa;
+    opacity: 0.5;
+    border-radius: 6px;
+    padding: 35px;
+    background-color: transparent;
+    color: rgb(156, 156, 156);
+}
+
+#btnReset {
+    margin: 30px 0;
+}
+
+#displayText {
+    font-size: 1.4rem;
+    margin: 25px 0;
+}
+
+/* Score styles*/
+.player, .computer {
+    font-size: 1.8rem;
+}
